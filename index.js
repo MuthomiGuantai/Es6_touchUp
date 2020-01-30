@@ -20,13 +20,41 @@ interestRate = 1;
 let name = "Guantai"; //dtring
 let age = 25; //number
 let IsApproved = true; //boolean
-let firstName = undefined; //undefined
+let firstName = "him"; //undefined
 let lastName = null; //null
 
 //Reference Types
 //object,array,Function
+//object
 let person = {
   name: "Muthomi",
   age: 30
 };
-console.log(person);
+
+//Dot Notation
+person.name = "john";
+
+//bracket notation
+person["name"] = "Mary";
+
+console.log(person.name);
+
+//arrays
+let selectedColors = ["red", "blue"];
+selectedColors[2] = "green";
+console.log(selectedColors);
+
+//functions
+function greet(name, lastName) {
+  console.log("Hello " + name + "" + lastName);
+}
+greet("Bruce", "Muthomi");
+
+//types of functions
+function square(number) {
+  return number * number;
+}
+console.log(square(2));
+//or
+let number = square(2);
+console.log(number);
